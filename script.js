@@ -173,136 +173,317 @@
 
 // Дз
 
-let arr = [
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
+// let arr = [
+//     {
+//         id: Math.random(),
+//         name: 'Timur',
+//         info: {
+//             school: '235',
+//             faculity: 'SMM'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Imran',
+//         info: {
+//             school: 'ne izvestno',
+//             faculity: 'programming'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Aminjon',
+//         info: {
+//             school: '444',
+//             faculity: 'Dizayn'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Muxammad',
+//         info: {
+//             school: '5555',
+//             faculity: 'Backend'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Timur',
+//         info: {
+//             school: '235',
+//             faculity: 'SMM'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Imran',
+//         info: {
+//             school: 'ne izvestno',
+//             faculity: 'programming'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Aminjon',
+//         info: {
+//             school: '444',
+//             faculity: 'Dizayn'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
 
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-]
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Muxammad',
+//         info: {
+//             school: '5555',
+//             faculity: 'Backend'
+//         },
+//     },
+// ]
 
 
 
-let categories = [
-    {
-        course: ' SMM',
-        count: 0
-    },
-    {
-        course: 'PROGRAMMING',
-        count: 0
-    },
-    {
-        course: '     3DSMAX',
-        count: 0
-    },
-    {
-        course: ' DIZAYN',
-        count: 0
-    },
-    {
-        course: '   BACKEND',
-        count: 0
-    },
-]
+// let categories = [
+//     {
+//         course: ' SMM',
+//         count: 0
+//     },
+//     {
+//         course: 'PROGRAMMING',
+//         count: 0
+//     },
+//     {
+//         course: '     3DSMAX',
+//         count: 0
+//     },
+//     {
+//         course: ' DIZAYN',
+//         count: 0
+//     },
+//     {
+//         course: '   BACKEND',
+//         count: 0
+//     },
+// ]
 
 // Описание задачи Найти количество людей одного типа из массива и сохранить их в массив категории В массиве категорий специально допущены ошибки (исходный массив менять нельзя)
 
 
-let updatedCategories = [];
+// let updatedCategories = [];
 
-for (let category of categories) {
-    let count = 0;
-    for (let item of arr) {
-        if (item.info.faculity.toUpperCase().trim() === category.course.trim()) {
-            count++;
-        }
+// for (let category of categories) {
+//     let count = 0;
+//     for (let item of arr) {
+//         if (item.info.faculity.toUpperCase().trim() === category.course.trim()) {
+//             count++;
+//         }
+//     }
+//     updatedCategories.push({ course: category.course.trim(), count: count });
+// }
+
+// console.table(updatedCategories);
+
+
+
+// 14.10.2023
+// lesson 24
+// for (let item of categories) {
+//     item.std = []
+// }
+
+// for (let item of arr) {
+//     let faculity = item.info.faculity.trim().toLowerCase()
+
+//     for (let categ of categories) {
+//         let categF = categ.course.trim().toLowerCase()
+
+//         if (faculity === categF) {
+//             categ.count++
+//             categ.std.push(item.name)
+//         }
+//     }
+// }
+
+// console.table(categories)
+
+
+
+// let user = {
+//     name: "alex",
+//     surname: "adams",
+//     age: 29
+// }
+
+// console.log(user, 'do');
+
+// user.isMarried = false
+
+// console.log(user, 'posle');
+
+
+
+// document.write(`2 * ${i} = ${2 * i} <br/>`)
+// i , j ,k
+
+// for (let i = 1; i <= 10; i++) {
+//     for (let k = 1; k <= 3; k++) {
+//         document.write(`${i}]. ${k} <br/>`)
+//     }
+//     document.write(`<hr/>`)
+// }
+
+
+// for (let i = 1; i <= 10; i++) {
+
+//     for (let k = 1; k <= 3; k++) {
+//         document.write(i)
+//     }
+// }
+
+
+
+// for (let i = 1; i <= 10; i++) {
+//     for (let k = 1; k <= 10; k++) {
+//         document.write(`${i} * ${k} = ${i * k} <br/>`)
+//     }
+//     document.write(`<hr/>`)
+// }
+
+// переменный i отвечает за столбике
+// переменный k отвечает за количество
+
+
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+// for (let i = 0; i <= 5; i++) {
+//     for (let k = 0; k < i; k++) {
+//         document.write(' *')
+//     }
+//     document.write('<br/>')
+// }
+
+// document.write('<br/>')
+
+// for (let i = 5; i > 0; i--) {
+//     for (let k = 0; k < i; k++) {
+//         document.write(' *')
+//     }
+//     document.write('<br/>')
+// }
+
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+
+
+
+// Дз
+
+let companies = [
+    {
+        id: 1,
+        name: 'baxtMen',
+        budget: 200000,
+        tax: 19,
+        expenses: [10000, 2000, 60000]
+    },
+    {
+        id: 2,
+        name: 'nosfrush',
+        budget: 1000,
+        tax: 0,
+        expenses: [50, 100, 10]
+    },
+    {
+        id: 3,
+        name: 'artyomida',
+        budget: 400000,
+        tax: 23,
+        expenses: [5000, 14000, 3000]
+    },
+    {
+        id: 4,
+        name: 'azizas',
+        budget: 150000,
+        tax: 0,
+        expenses: [5000, 6000, 4000]
+    },
+    {
+        id: 5,
+        name: 'openBobur',
+        budget: 500,
+        tax: 12,
+        expenses: [10, 30, 5]
+    },
+    {
+        id: 6,
+        name: 'IS_buildings',
+        budget: 1000000,
+        tax: 21,
+        expenses: [500000, 25000, 10000]
+    },
+    {
+        id: 7,
+        name: 'XOJIK_RADAR',
+        budget: 40000,
+        tax: 12,
+        expenses: [500, 2500, 1000]
+    },
+]
+
+
+// arr[i] достает из массива
+
+
+// 1. Посчитать общие расходы каждой компании
+for (let i = 0; i < companies.length; i++) {
+    let totalExpenses = 0;
+    for (let k = 0; k < companies[i].expenses.length; k++) {
+        totalExpenses += companies[i].expenses[k];
     }
-    updatedCategories.push({ course: category.course.trim(), count: count });
+    console.log(`Total expenses of ${companies[i].name}: ${totalExpenses}`);
 }
 
-console.table(updatedCategories);
+
+
+// 2. Показать чистую прибыль каждой компании вычитав расходы и налоги
+let netProfits = [];
+for (let i = 0; i < companies.length; i++) {
+    let expensesSum = companies[i].expenses.reduce((acc, cur) => acc + cur, 0);
+    let taxAmount = companies[i].budget * (companies[i].tax / 100);
+    let netProfit = companies[i].budget - expensesSum - taxAmount;
+    netProfits.push(netProfit);
+}
+
+console.table(netProfits)
